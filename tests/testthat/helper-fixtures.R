@@ -1,0 +1,1 @@
+read_fixture <- function(f) paste(readLines(test_path("fixtures", f)), collapse = " ")
