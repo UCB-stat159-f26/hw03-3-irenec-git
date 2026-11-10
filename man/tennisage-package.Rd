@@ -4,17 +4,8 @@
 \name{tennisage-package}
 \alias{tennisage}
 \alias{tennisage-package}
-\title{tennisage: What the Package Does (One Line, Title Case)}
+\title{tennisage: Retrieves career matches from tennisabstract.com and creates plot for a given player}
 \description{
-What the package does (one paragraph).
-}
-\author{
-\strong{Maintainer}: First Last \email{first.last@example.com}
-
-Authors:
-\itemize{
-  \item First Last \email{first.last@example.com}
-}
-
+Package to retrieve career match data of a given player from tennis abstract.com, then creates a plot visualization of player age against opponent age, with points colored by match result.
 }
 \keyword{internal}
