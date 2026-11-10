@@ -1,10 +1,11 @@
-Package: tennisage
-Title: What the Package Does (One Line, Title Case)
+Package: tennismatches
+Type: Package
+Title: Retrieves career matches from tennisabstract.com and creates plot for a given player
 Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: MIT + file LICENSE
+Author: Irene Chen
+Maintainer: Irene Chen <chenirene@berkeley.edu>
+Description: Package to retrieve career match data of a given player from tennis abstract.com, then creates a plot visualization of player age against opponent age, with points colored by match result. 
+License: MIT
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 8.0.0
