@@ -1,0 +1,5 @@
+This assignment was completed with assistance from the AI model Claude Sonnet 5.5, which was used in the following sections:
+- In the files `data-fetch.R`, `data-parse.R`, and `dob-fetch.R`, AI was used to help with code for fetching information from js file urls. 
+- In the file `data-clean.R`, AI was used to help with code for formatting data into a more readable form. 
+- In the files `player-plot.R` and `get-career-matches.R`, AI was used to apply roxygen2.
+- In all files located in `tests`, AI was used to understand how to use the `test_that()` function. 
