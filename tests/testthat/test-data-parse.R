@@ -3,6 +3,11 @@ test_that("rows are extracted from female and male files", {
   expect_length(extract_match_rows(read_fixture("MalePlayerCareer.js")), 3)
 })
 
+test_that("rows are extracted when the array ends with spaces before ];", {
+  js <- 'var morematchmx = [["a","b"],\n  ["c","d"]       ];'
+  expect_length(extract_match_rows(js), 2)
+})
+
 test_that("missing match data gives a meaningful error", {
   expect_error(extract_match_rows("<html>nope</html>"), "No match data")
 })

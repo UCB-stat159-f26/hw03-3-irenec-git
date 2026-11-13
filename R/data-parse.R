@@ -1,8 +1,10 @@
 extract_match_rows <- function(js) {
-  pattern <- "var morematchmx = \\K\\[\\[.*?\\]\\](?=\\s*(;|$))"
-  m <- regmatches(js, regexpr(pattern, js, perl = TRUE))
-  if (length(m) == 0) stop("No match data found in the file.", call. = FALSE)
-  jsonlite::fromJSON(m, simplifyVector = FALSE)
+  start <- regexpr("var morematchmx\\s*=\\s*", js)
+  if (start == -1) stop("No match data found in the file.", call. = FALSE)
+  rest <- substring(js, start + attr(start, "match.length"))
+  end  <- regexpr("\\]\\s*;", rest)            
+  if (end == -1) end <- regexpr("\\]\\s*$", rest) 
+  jsonlite::fromJSON(substr(rest, 1, end), simplifyVector = FALSE)
 }
 
 parse_player_dob <- function(html) {
