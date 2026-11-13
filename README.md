@@ -64,11 +64,29 @@ library(tennisage)
 # Serena Williams
 serena = get_career_matches("Serena Williams")
 plot_age_gap(serena)
+```
 
+<figure>
+<img src="man/figures/serena.png"
+alt="Serena Williams: age vs. age difference with opponent" />
+<figcaption aria-hidden="true">Serena Williams: age vs. age difference
+with opponent</figcaption>
+</figure>
+
+``` r
 # Rafael Nadal
 rafa = get_career_matches("Rafael Nadal")
 plot_age_gap(rafa)
+```
 
+<figure>
+<img src="man/figures/rafa.png"
+alt="Rafael Nadal: age vs. age difference with opponent" />
+<figcaption aria-hidden="true">Rafael Nadal: age vs. age difference with
+opponent</figcaption>
+</figure>
+
+``` r
 # invalid name
 get_career_matches("Gaston Sanchez")
 ```
